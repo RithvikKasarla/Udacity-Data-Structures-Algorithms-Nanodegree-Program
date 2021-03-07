@@ -18,8 +18,11 @@ if __name__ == "__main__":
 
     for text in texts: #O(n)
         numbers.add(text[0])
+        numbers.add(text[1])
     for call in calls: #O(n)
         numbers.add(call[0])
+        numbers.add(call[1])
+
 
     print("There are {} different telephone numbers in the records".format(len(numbers)))
 
