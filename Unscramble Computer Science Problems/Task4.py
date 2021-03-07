@@ -29,7 +29,7 @@ if __name__ == '__main__':
         incomingcall.append(call[1])
     
     for x in outgoingcall: #O(n)
-        if(not (x in outgoingtext or x in incomingtext or x in incomingcall)):#O(1)
+        if(not (x in outgoingtext or x in incomingtext or x in incomingcall)):#O(n)
             telemarketers.add(x) #O(1)
     print("These numbers could be telemarketers: ")
     for y in sorted(telemarketers): #O(n) + O(nlogn)

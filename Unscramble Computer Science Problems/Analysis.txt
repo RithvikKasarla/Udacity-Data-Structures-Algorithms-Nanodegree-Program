@@ -17,6 +17,5 @@
 
 #Task 4:
     The function goes over the arrays calls and texts getting a list of all outgoing numbers and incoming numbers which is O(n) for both. Then it goes again into all the Outgoing calls which in the worst case
-    scenario is O(n). In this outgoingcalls for loop it includes an if in statement which has a worst case run time of O(1) as the datastructure is a set which uses hashmapping.
-    The function then goes through the sorted list of potential telemarketers. The sorted command at worst case scenario has a run time of O(n log n) and going through the array can have
-    a worst case scenario of O(n). Overall, O(n logn) is the apporximated worst case scenario.
+    scenario is O(n). In this outgoingcalls for loop it includes an if in statement which has a worst case run time of O(n). The function then goes through the sorted list of potential telemarketers. 
+    The sorted command at worst case scenario has a run time of O(n log n) and going through the array can have a worst case scenario of O(n). Overall, O(n^2) is the apporximated worst case scenario.
