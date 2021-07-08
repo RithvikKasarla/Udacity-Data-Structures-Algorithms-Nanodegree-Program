@@ -37,5 +37,3 @@ class BlockChain:
 
     def size(self):
         return self._size_
-    
-utc = datetime.datetime.utcnow()
