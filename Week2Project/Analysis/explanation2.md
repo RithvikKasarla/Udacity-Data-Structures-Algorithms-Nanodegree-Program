@@ -1,3 +1,3 @@
 In problem 2, I used recursion. I started on the base folder and went through its contents. If the content was a folder I would enter it then go through its contents until I hit a folder, then enter that folder and so on. If its a file I save it in a count. Finally when it hits a folder with only files, it goes back on the call stack and contnues with the parent folder,and does this so on until it effectively goes through all the folders and counts all the files with a certain suffix.
 
-The time efficency is O(n) as the function goes through all the folders/files once. The space effecncy is O(1) as all that is saved from the program is a single integer, and as the size of the input increases on the count number may increase.
+The time complexity is O(n) as the function goes through all the folders/files once. The space effecncy is O(n).

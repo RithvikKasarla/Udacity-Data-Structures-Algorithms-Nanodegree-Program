@@ -6,4 +6,4 @@ Finally I converted the data.
 
 For the decoding process, I used regression to traverse the tree and recrease the conversions of each letter, the converstions were held using a dictionary with key value pairs. Once I had this dictionary created, I went through the encoded message and used basic code to split it to the numbers and put each in the decoding dictionary to get the final message.
 
-The time complexity ofr the encoding is O(n) and the time complexity for the decoding is O(n). As in both we effectively go through the message once either to decode all the values back to letters or vice versa.
+The time complexity of the encoding is O(nlogn) and the time complexity for the decoding is O(n). As in both we effectively go through the message once either to decode all the values back to letters or vice versa. The space complexity for both functions is O(n).

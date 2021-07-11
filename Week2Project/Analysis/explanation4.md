@@ -1,3 +1,3 @@
 For problem 4, I used regression. I saw the repeated process of going through groups users and if the seen user isnt there then you go through the groups groups. First you go through the first group and see if the user are in its users if not you go through the its groups, adding to the call stack. Then once you hit a user with not groups, and if you still didnt find the user, your go back through the call stack, until you effectively go through all the users seeing if the user is in the bigger group.
 
-The space efficency is O(n) as in its worst case scenario you go though all the data- all the existing users and groups.
+The space efficency is O(n) as in its worst case scenario you go though all the data- all the existing users and groups. The time complexity is also O(n)
