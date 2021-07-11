@@ -53,5 +53,5 @@ def is_user_in_group(user, group):
 
 if __name__ == "__main__":
     print(is_user_in_group("sub_child_user",parent)) #true
-    print(is_user_in_group("USER",parent))#False
+    print(is_user_in_group("USER Not in group",parent))#False
     print(is_user_in_group("sub_child_user", "NOT A Group")) #Not a Group

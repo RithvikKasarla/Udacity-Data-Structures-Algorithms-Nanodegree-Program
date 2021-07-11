@@ -19,5 +19,5 @@ def find_files(suffix, path):
 if __name__ ==  '__main__':
     print(find_files(".c","./testdir")) # Answer 4
     print(find_files(".h","./testdir")) # Answer 4
-    print(find_files(".k","./testdir")) # Answer 0
-    print(find_files(".c","./WRONGDIR")) # Answer "Path Not Found"
+    print(find_files(".k","./testdir")) # Answer 0 edge case 1: (.k files are not in the directory)
+    print(find_files(".c","./WRONGDIR")) # Answer "Path Not Found" Edge case 2: (Not a valid directory)

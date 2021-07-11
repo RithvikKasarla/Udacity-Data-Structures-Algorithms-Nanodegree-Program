@@ -5,7 +5,10 @@ class LRU_Cache(object):
         self.size = 0
         self.cache = dict()
         self.LRU = Queue()
-        self.cap = capacity
+        if capacity == None:
+            self.cap = 0
+        else:
+            self.cap = capacity
 
     def get(self, key):
         if self.LRU.contains(key):
@@ -116,7 +119,7 @@ class Queue():
             node = node.next
         return False
         
-
+print("---------------------------------------")
 our_cache = LRU_Cache(5)
 
 our_cache.set(1, 1)
@@ -124,10 +127,43 @@ our_cache.set(2, 2)
 our_cache.set(3, 3)
 our_cache.set(4, 4) 
 
-print(our_cache.get(1) )      # returns 1
-print(our_cache.get(2) )      # returns 2
-print(our_cache.get(9)     ) # returns -1 because 9 is not present in the cache
+print("our_cache.get(1)", our_cache.get(1))      # returns 1
+print("our_cache.get(2)", our_cache.get(2))      # returns 2
+print("our_cache.get(9)", our_cache.get(9))      # returns -1 because 9 is not present in the cache
 our_cache.set(5, 5) 
 our_cache.set(6, 6)
-print(our_cache.get(3))  # returns -1 because the cache reached it's capacity and 3 was the least recently used entry
- 
+print("our_cache.get(3)", our_cache.get(3))  # returns -1 because the cache reached it's capacity and 3 was the least recently used entry
+
+# TESTCASE 2
+print("---------------------------------------")
+
+our_cache = LRU_Cache(-1)
+
+our_cache.set(1, 1)
+our_cache.set(2, 2)
+our_cache.set(3, 3)
+our_cache.set(4, 4) 
+
+print("our_cache.get(1)", our_cache.get(1))      # returns -1
+print("our_cache.get(2)", our_cache.get(2))      # returns -1
+print("our_cache.get(9)", our_cache.get(9))      # returns -1
+our_cache.set(5, 5) 
+our_cache.set(6, 6)
+print("our_cache.get(3)", our_cache.get(3))  # returns -1 
+
+# TEST CASE 3
+print("---------------------------------------")
+
+our_cache = LRU_Cache(None)
+
+our_cache.set(1, 1)
+our_cache.set(2, 2)
+our_cache.set(3, 3)
+our_cache.set(4, 4) 
+
+print("our_cache.get(1)", our_cache.get(1))      # returns -1
+print("our_cache.get(2)", our_cache.get(2))      # returns -1
+print("our_cache.get(9)", our_cache.get(9))      # returns -1 
+our_cache.set(5, 5) 
+our_cache.set(6, 6)
+print("our_cache.get(3)", our_cache.get(3))      # returns -1 
