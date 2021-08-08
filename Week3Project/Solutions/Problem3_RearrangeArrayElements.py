@@ -7,6 +7,10 @@ def rearrange_digits(input_list):
     Returns:
        (int),(int): Two maximum sums
     """
+    if len(input_list) == 0:
+        return ()
+    if len(input_list) == 1:
+        return (input_list[0],None)
     heapsort(input_list)
     big = [None,None]
     for x in range(len(input_list)-1,-1,-1):
@@ -60,4 +64,6 @@ test_function([[1, 2, 3, 4, 5], [542, 31]])
 test_case = [[4, 6, 2, 5, 9, 8], [964, 852]]
 test_function(test_case)
 test_case = [[8,6], [8,6]]
+test_function(test_case)
+test_case = [[], []]
 test_function(test_case)
