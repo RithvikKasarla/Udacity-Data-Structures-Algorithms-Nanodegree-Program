@@ -1,0 +1,1 @@
+The time complexity is O(logn) and space complexity is O(1) as all we do is store one number, the answer. Starting out I realized we didnt need to check every number upto the inputed number we are trying to find the square root of, but we just need to check the squares, which helps bring the time complexity from O(n) to O(logn).

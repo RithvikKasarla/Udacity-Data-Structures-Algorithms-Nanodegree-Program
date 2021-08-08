@@ -1,0 +1,2 @@
+As we tried getting the smallest and largest element in the array, I had 2 variables one that held the biggest element and one which held the smallest. This allowed me to check both my potential minand max against all the numbers in the array and end up with a true min and max.
+The space complexityis O(1) and time complexity is O(n). 

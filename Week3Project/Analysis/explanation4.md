@@ -1,0 +1,3 @@
+For this one I used 3 pointers to sort the array of 0's, 1's and 2's. I has onepointer start at the beggning and point to the first non zero digit and another pointer start at the and point at the last non 2 digit. Then I used the third pointer to traverse through the array, if it hit a zero switch numbers with the first pointer and move the first pointer up by one. Then if it hit a 2 then do the same with the second number. 
+
+Time complexiy is O(n) and the space complexity is also O(n).
